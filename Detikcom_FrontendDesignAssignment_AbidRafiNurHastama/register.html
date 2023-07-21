@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="Detikfinance Business Plan Competition 2023" content="Empowering Indonesia Startup">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        
+        <link 
+            rel="stylesheet" href="./styles/index.css"
+        >
+        <link 
+            rel="stylesheet" href="./styles/responsive.css"
+        >
+        <link rel="icon" href="./logo-detik.png"
+        >
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap"
+        />
+        <link
+            rel="stylesheet"
+            ref="https://fonts.googleapis.com/css2?family=Public Sans:wght@800&display=swap"
+        />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap"
+        />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+        />
+        <title>Register Form</title>
+    </head>
+
+    <body>
+        <nav class="navbar" id="navbar">
+            <a href="./index.html"><img class="logo" src="./assets/logodetik.png" alt="Logo Detik"></a>
+            <div class="hamburger" onclick="toggleMenu()">☰</div>
+            <div class="navbar-nav">
+                <a href="./index.html">About</a>
+                <a href="./index.html">Mechanism</a>
+                <a href="./index.html">Latest Update</a>
+                <button class="btn-regist">Register</button>
+            </div>
+        </nav>
+
+        <div class="regist-title">
+            <h1>Registrasi</h1>
+            <div class="regist-form">
+                <div class="form-group">
+                    <input type="text" id="nama_perusahaan" name="nama_perusahaan" required placeholder="Nama Perusahaan*">
+                </div>
+        
+                <div class="form-group">
+                    <input type="email" id="email" name="email" required placeholder="Email*">
+                </div>
+        
+                <div class="form-group">
+                    <input type="text" id="nomor_telepon" name="nomor_telepon" required placeholder="Nomor Telepon*">
+                    <p>Isi hanya angka</p>
+                </div>
+        
+                <div class="form-group">
+                    <textarea id="tentang_perusahaan" name="tentang_perusahaan" rows="5" required placeholder="Tentang perusahaan (Max. 200 Character)*"></textarea>
+                </div>
+        
+                <div class="form-group">
+                    <label for="logo_perusahaan">Upload file logo</label>
+                    <div class="upload-btn-wrapper">
+                        <button class="btn-form-upload">Upload file logo</button>
+                        <input type="file" id="logo_perusahaan" name="logo_perusahaan" accept=".png, .jpg, .jpeg" required>
+                    </div>
+                    <p>1. Format file: png, jpg, jpeg<br>2. Maksimal ukuran file: 200kb<br>3. Hindari penggunaan logo berwarna putih<br>4. Minimal lebar: 300px</p>
+                </div>
+        
+                <div class="form-group">
+                    <div class="input-wrapper">
+                      <input type="text" id="profil_perusahaan" name="profil_perusahaan" required placeholder="Profil Perusahaan atau Deck (opsional)">
+                      <div class="upload-btn-wrapper">
+                        <button class="btn-form-file">Upload file</button>
+                        <input type="file" id="profil_perusahaan_file" name="profil_perusahaan_file" required>
+                      </div>
+                    </div>
+                    <p>Format file .pdf, maksimal size 20mb</p>
+                  </div>
+        
+                <div class="form-group">
+                    <input type="text" id="link_website" name="link_website" required placeholder="Link Website*">
+                </div>
+        
+                <div class="checkbox-group">
+                    <input type="checkbox" id="syarat_dan_ketentuan" name="syarat_dan_ketentuan" required>
+                    <label for="syarat_dan_ketentuan">Dengan menekan tombol daftar, saya menyetujui syarat dan ketentuan yang berlaku</label>
+                </div>
+        
+                <button class="btn-register" type="submit">Register</button>
+            </div>
+        </div>
+
+        <footer>
+            <img src="./assets/logodetik.png" alt="logo-detik">
+            <p>Detikfinance memberikan ruang kepada para startup di Indonesia untuk menunjukkan, serta<br>
+            mempromosikan brand mereka untuk mendapatkan perhatian dari venture capital atau angel investor
+                <img src="./assets/twitter-putih.png" id="twitter-putih" alt="logo-twitter"> 
+                <img src="./assets/instagram-putih.png" id="instagram-putih" alt="logo-instagram"> 
+                <img src="./assets/facebook-putih.png" id="facebook-putih" alt="logo-facebook"> </p>
+            <div class="some"></div>
+            <p>© 2023 Detikcom, All Rights Reserved</p>
+        </footer>
+        
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="./index.js"></script>
+    </body>
+</html>
